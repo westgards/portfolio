@@ -47,4 +47,4 @@ Licensed under the MIT license. [MIT license Repo Link](https://github.com/westg
 - Proper Heading levels and nesting to better organize the website content
 - Descriptive URLS for Hyperlinks
 - Webpage supports rezing and ciew website on various screens and devices
-- Advanced CSS: css variables + media tags
+- Advanced CSS: css variables + keyframes
