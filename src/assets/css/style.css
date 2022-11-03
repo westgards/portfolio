@@ -1,3 +1,6 @@
+:root {
+  --font-fam: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ;
+}
 * {
   padding: 0;
   margin: 0;
@@ -9,7 +12,7 @@ body {
 
 .header {
   padding: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: var(--font-fam);
   background-color: #131f25;
   position: sticky;
   top: 0; 
@@ -116,35 +119,6 @@ p {
   max-width: 50px;
 }
 
-.fun-links { 
-  /* Sets the benefits aside on the right. */
-  display: flex-box;
-  margin-left: 20px;
-  padding: 20px;
-  clear: both;
-  float: left;
-  width: 20%;
-  height: 100%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: yellowgreen;
-} 
-
-.funny-links  {
-  margin-bottom: 32px;
-  color: #ffffff;
-}
-
-.funny-links  img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
-
-.funny-links  h3 {
-  margin-bottom: 10px;
-  text-align: center;
-} 
-
 .float-left {
   float: left;
   margin-right: 25px;
@@ -154,7 +128,7 @@ p {
 .footer {
   padding: 30px;
   clear: both;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: var(--font-fam);
   text-align: center;
 }
 
