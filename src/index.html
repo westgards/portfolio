@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"> 
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Westgard</title>
 </head>
@@ -10,7 +9,6 @@
     <!-- Site Header -->
     <header class="header">
         <!--The h1 tag should be used for the most important heading-->
-        <!-- <h1>Nicole<span class="westgard"> Westgard</span></h1> -->
         <span class="westgard title-word-1">Nicole</span>
         <span class="westgard title-word-2">Westgard</span>
         <!-- The nav tag defines a set of navigation links-->
@@ -25,36 +23,57 @@
                 <li>
                     <a href="#art-gallery">Digital Art Gallery</a>
                 </li>
+                <li>
+                    <a href="#self-port">Avatar</a>
+                </li>
             </ul>
         </nav>
     </header>
     <!-- The main element represents the main content of the body of a document or application. -->  
     <main>
-        <figure class="self-port" alt="pixelated Avatar for Nicole Westgard, glasses with brown hair and black shirt. Light purple background"></figure>
+        <!-- <figure class="self-port" alt="pixelated Avatar for Nicole Westgard, glasses with brown hair and black shirt. Light purple background"></figure> -->
         <!-- The section is a thematic grouping of content-->  
-        <section class="content">
-            <article id="github" class="feature">
-                <img src="./assets/images/80s.png" class="float-left" alt="Image of 1980s graphic pink grid lines, black space background blue light flares."/>
+        <grid class="grid-container">
+            <div id="github" class="grid-item">
+                <img src="./assets/images/80s.png"  alt="Image of 1980s graphic pink grid lines, black space background blue light flares."/>
                 <h2>Github</h2>
                 <p>
                    All the repos stuff!!!
                 </p>
-            </article>
-            <article id="linkedin" class="feature">
-                <img src="./assets/images/billMurray.png" class="float-right" alt="Image of actor bill Murray carrying a bolt cutter from the Wes Anderson movie 'Rushmore'."/>
+            </div>
+            <div id="linkedin" class="grid-item">
+                <img src="./assets/images/billMurray.png"  alt="Image of actor Bill Murray carrying a bolt cutter from the Wes Anderson movie 'Rushmore'."/>
                 <h2>LinkedIn</h2>
                 <p>
                     LinkedIn bio.
                 </p>
-            </article>
-            <article id="art-gallery" class="feature">
-                <img src="./assets/images/retrowave.png" class="float-left" alt="Image of desktop covered with stickers relating to social media like popular app icons, a camera icon, a message icon, and the heart icon."/>
+            </div>
+            <div id="art-gallery" class="grid-item">
+                <img src="./assets/images/retrowave.png"   alt="Image of desktop covered with stickers relating to social media like popular app icons, a camera icon, a message icon, and the heart icon."/>
                 <h2>Digital Art Gallery</h2>
                 <p>
                    Digital artwork
                 </p>
-            </article>
-        </section>
+            </div>
+            <div id="self-port" class="grid-item" class="float-left">
+                <img src="./assets/images/pic_port.jpg"  alt="pixelated Avatar for Nicole Westgard, glasses with brown hair and black shirt. Light purple background."/>
+                <h2>8-bit meee!</h2>
+            </div>
+            <div id="random" class="grid-item" class="float-left">
+                <img src="./assets/images/retrowave.png" alt="Image of desktop covered with stickers relating to social media like popular app icons, a camera icon, a message icon, and the heart icon."/>
+                <h2>Digital Art Gallery</h2>
+                <p>
+                   Random!!
+                </p>
+            </div>
+            <div id="help" class="grid-item" class="float-left">
+                <img src="./assets/images/retrowave.png"  alt="."/>
+                <h2>placeholder</h2>
+                <p>
+                   Digital artwork
+                </p>
+            </div>
+        </grid>
         <!-- The aside tag defines some content aside from the content it is placed in-->
         <aside class="fun-links">
             <article class="funny-links">
