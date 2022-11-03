@@ -7,10 +7,12 @@
 }
  /*Element selector that sets the background to a default color in case of loading errors. */
 body {
+  background-size: cover;
   background-color: lightslategray;
 }
 
 .header {
+  display: flex;
   padding: 20px;
   font-family: var(--font-fam);
   background-color: #131f25;
@@ -20,17 +22,17 @@ body {
   background-position: 100%;
   width: 100%;
   height: 100px;
-
 }
 
 .header h1 {
-  display: flex-box;
+  display: flex;
   font-size: 48px;
   position: sticky;
   top: 0;
 }
 
 .header h1 .westgard {
+  display: flex;
   color: rgb(227, 97, 121);
   position: sticky;
   top: 0;
@@ -39,12 +41,12 @@ body {
 .header nav {
   border-color: #ACCFCB;
   list-style-type: none;
-  display: flex-box;
+  display: flex;
   padding-top: 15px;
   padding-left: 10px;
   float: right;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .header nav ul li {
@@ -93,15 +95,21 @@ p {
   grid: auto-fill;
   grid-template-columns: repeat(auto-fill, minmax(192px, 300px));
   background-color: #2196F3;
+  background-size: cover;
   padding: 10px;
+  flex: 0 0 800px;
 }
 
 .grid-item {
+  flex: 2;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 10px;
   font-size: 16px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .grid-item img {
@@ -168,3 +176,11 @@ span[data-descr]:hover::after {
   99%   {color: var(--color-3)}
   100%  {color: var(--color-1)}
 }
+
+/* Resonsive Design 
+/* This is for Tablet sizes*/
+@media screen and (max-width: 996px) {
+  .header nav {
+  font-size: 10px; 
+  }
+} 
