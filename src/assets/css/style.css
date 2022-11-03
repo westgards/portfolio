@@ -1,185 +1,173 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
-
+ /*Element selector that sets the background to a default color in case of loading errors. */
 body {
-     /*Element selector that sets the background to a default color in case of loading errors. */
-    background-color: lightslategray;
-    display: flex-box;
+  background-color: lightslategray;
 }
 
 .header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #131f25;
-    color: #ffffff;
-    position: sticky;
-    top: 0; 
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #131f25;
+  position: sticky;
+  top: 0; 
+  background-size: cover;
+  background-position: 100%;
+  width: 100%;
+  height: 100px;
+
 }
 
 .header h1 {
-    display: flex-box;
-    font-size: 48px;
-    position: sticky;
-    top: 0;
+  display: flex-box;
+  font-size: 48px;
+  position: sticky;
+  top: 0;
 }
 
 .header h1 .westgard {
-    color: rgb(227, 97, 121);
-    position: sticky;
-    top: 0;
+  color: rgb(227, 97, 121);
+  position: sticky;
+  top: 0;
 }
 
 .header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    position: sticky;
-    top: 0;
+  list-style-type: none;
+  display: flex-box;
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  position: sticky;
+  top: 0;
 }
 
 .header nav ul li {
-    list-style-type: none;
-    margin-left: 25px;
-    position: sticky;
-    top: 0;
+  margin-left: 25px;
+  position: sticky;
+  top: 0;
 }
 
 a {
-    color: #ffffff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 p {
-    font-size: 16px;
-}
-
-.self-port {
-     /*Sets the main figure image.*/
-    display: flex-box;
-    height: 100px;
-    width: 100px;
-    margin-bottom: 25px;
-    background-image: url("../images/pic_port.jpg");
-    background-size:contain;
-    background-position: center;  
-    
+  font-size: 16px;
 }
 
 /*https://alvarotrigo.com/blog/css-text-animations/ */
+/* Color animation of title name */
 .westgard {
-    display:flex-box;
-    text-transform: uppercase;
-    animation: color-animation 4s linear infinite;
-    font-size: 90px;
+  list-style-type: none;
+  display:flex-box;
+  text-transform: uppercase;
+  animation: color-animation 4s linear infinite;
+  font-size: 90px;
 }
 
-  .title-word-1 {
-    display: flex-box;
-    --color-1: #DF8453;
-    --color-2: #3D8DAE;
-    --color-3: #E4A9A8;
-  }
-  
-  .title-word-2 {
-    display: flex-box;
-    --color-1: #DBAD4A;
-    --color-2: #ACCFCB;
-    --color-3: #17494D;
-  }
-
-.content {
-    display: flex-box;
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+.title-word-1 {
+  /* display: flex-box; */
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
 }
 
-/* aside */
-.fun-links {
-    /* Sets the benefits aside on the right. */
-    display: flex-box;
-    margin-left: 20px;
-    padding: 20px;
-    clear: both;
-    float: left;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: yellowgreen;
+.title-word-2 {
+  display: flex-box;
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
 }
+
+
+/* main */
+/* Sets the grid styling https://www.w3schools.com/css/tryit.asp?filename=trycss_grid */
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  grid: auto-fill;
+  grid-template-columns: repeat(auto-fill, minmax(192px, 300px));
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center 
+}
+
+.grid-item img {
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
+}
+
+.grid-item h2 {
+  display: block;
+  margin: 10px;
+  max-width: 50px;
+}
+
+.fun-links { 
+  /* Sets the benefits aside on the right. */
+  display: flex-box;
+  margin-left: 20px;
+  padding: 20px;
+  clear: both;
+  float: left;
+  width: 20%;
+  height: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: yellowgreen;
+} 
 
 .funny-links  {
-    margin-bottom: 32px;
-    color: #ffffff;
-
+  margin-bottom: 32px;
+  color: #ffffff;
 }
 
 .funny-links  img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
 }
 
 .funny-links  h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
+  margin-bottom: 10px;
+  text-align: center;
+} 
 
-/* main */
 .float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-/* Sets the section styling */
-.feature {
-    display: flex-box;
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: black;
-    color: #ffffff;
-}
-
-.feature h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.feature img {
-    max-height: 200px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
+  float: left;
+  margin-right: 25px;
 }
 
 /* footer */
 .footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+  padding: 30px;
+  clear: both;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
 }
 
 .footer h2 {
-    font-size: 20px;
+  font-size: 20px;
 }
-  
-  @keyframes color-animation {
-    0%    {color: var(--color-1)}
-    32%   {color: var(--color-1)}
-    33%   {color: var(--color-2)}
-    65%   {color: var(--color-2)}
-    66%   {color: var(--color-3)}
-    99%   {color: var(--color-3)}
-    100%  {color: var(--color-1)}
-  }
-  
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
