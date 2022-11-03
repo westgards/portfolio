@@ -41,6 +41,7 @@ body {
   list-style-type: none;
   display: flex-box;
   padding-top: 15px;
+  padding-left: 10px;
   float: right;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
@@ -122,7 +123,7 @@ span[data-descr] {
   cursor: grab;
 }
 
-/* Position tooltip above the term/phrase, same color as header and nav links, no border-radius, smaller font size */
+/* Position tooltip above the text.*/
 span[data-descr]:hover::after {
   content: attr(data-descr);
   position: absolute;
@@ -137,6 +138,7 @@ span[data-descr]:hover::after {
   z-index: 1;
 }
 
+/* second grid section for contact information*/
 #contact {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
